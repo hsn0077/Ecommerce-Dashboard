@@ -30,7 +30,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
         const collectData = async () =>{
             console.warn(firstName, lastName, email, password);
-            let result = await fetch('http://localhost:5000/register', {
+            let result = await fetch('https://ecommerce-dashboard-rho-mauve.vercel.app/register', {
                 method: 'post',
                 body: JSON.stringify({firstName, lastName, email, password}),
                 headers: {
