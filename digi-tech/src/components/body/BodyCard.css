@@ -1,0 +1,57 @@
+#AddToCart {
+    background-color: #ffe100;
+    background-image: none;
+    border: none;
+    margin-top: -25px;
+    height: 30px;
+    margin-left: 0px;
+    border-radius: 0;
+    color: #0c4a79;
+}
+
+#AddToCart:hover{
+    background-color: orange;
+    color: #0c4a79;
+}
+
+.card-text{
+    font-size: 12px;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.card-img-top{
+    width: 190px;
+    height: 190px;
+    margin-left: 75px;
+}
+
+.header{
+    background-color: rgb(194, 194, 194);
+    font-family: Roboto;
+    color: rgb(59, 59, 59);
+    height: 40px;
+    width: full;
+}
+
+.header h4{
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.css-o69gx8-MuiCardMedia-root{
+    width: 190px !important;
+    height: 190px !important;
+    margin-left: 50px;
+}
+
+@media (max-width: 600px){
+    .css-o69gx8-MuiCardMedia-root{
+        width: 120px !important;
+        height: 120px !important;
+        margin-left: 90px;
+    }
+    
+}

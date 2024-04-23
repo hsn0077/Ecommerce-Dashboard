@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+.navbar-top{
+    margin: 0;
+    padding: 0;
+    background-color: #0c4a79;
+    height: 80px;
+}
+
+.btn{
+    color: white;
+    background-color:  #ffe100;
+    background-image: none;
+    border: none;
+    margin-top: -60px;
+    height: 30px;
+    margin-left: -11px;
+    border-radius: 0;
+    color: #0c4a79;
+}
+
+.btn:hover{
+    background-color: orange;
+    color: #0c4a79;
+    border: none;
+}
+
+.navbar {
+    background: #022E4C;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    font-family: Roboto;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 28px;
+    color:  #ffe100;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.navbar-brand:hover{
+    color: orange;
+}
+
+.nav-link:hover{
+    background-color: rgb(32, 135, 175);
+    color: white;
+}
+
+.form-inline{
+    margin-left: 70%;
+    position: absolute;
+}
+
+.form-control{
+    margin-top: -60px;
+    height: 30px;
+    border-radius: 0;
+    width: 200px;
+}
+
+.navbar-nav li{
+    padding-left: 30px;
+}
+
+#sign_up{
+    margin-left: 270px;
+    border: none;
+    background-color: #ffe100;
+    text-decoration: none;
+    color: black !important;
+    position: absolute;
+    margin-top: -60px;
+    height: 40px;
+    width: 75px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#login{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* .user-btn{
+    margin-top: -50px;
+    border: none;
+    background: transparent;
+} */
+
+@media (max-width: 1112px) {
+    #sign_up{
+        margin-left: 200px;
+    }
+    .form-inline{
+        margin-right:40%;
+    }
+    .form-control{
+        width: 160px !important;
+    }
+    .btn{
+        margin-left: 150px;
+    }
+
+}
+@media (max-width: 882px) {
+    #sign_up{
+        margin-left: 200px;
+    }
+    .form-inline{
+        margin-left:500px;
+    }
+}
+@media (max-width: 780px) {
+    #sign_up{
+        margin-left: 200px;
+    }
+    .form-inline{
+        margin-left:400px;
+    }
+}
+@media (max-width: 679px) {
+    #sign_up{
+        margin-left: 200px;
+    }
+    .form-inline{
+        margin-left:300px;
+    }
+}
+@media (max-width: 578px) {
+    #sign_up{
+        margin-left: 200px;
+    }
+    .form-inline{
+        margin-left:200px;
+    }
+}
+
+/* #sign_up Link{
+    color: black !important;
+} */
