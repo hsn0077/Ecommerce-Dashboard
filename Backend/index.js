@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors(
   {
     origin: ["https://ecommerce-dashboard-frontend-khaki.vercel.app"],
-    methods: ['POST', 'GET', 'DELETE'],
+    methods: ["POST","GET","DELETE"],
     credentials: true
   }
 ));
