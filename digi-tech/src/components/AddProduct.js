@@ -21,7 +21,7 @@ export default function AddProduct() {
   const [specification, setSpecification] = useState("");
 
   const addProduct = async () => {
-    let result = await fetch("http://localhost:5000/add-product", {
+    let result = await fetch("https://ecommerce-dashboard-rho-mauve.vercel.app/add-product", {
       method: "post",
       body: JSON.stringify({
         name,
