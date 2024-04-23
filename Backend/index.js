@@ -9,9 +9,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors(
   {
-    origin: ["https://ecommerce-dashboard-frontend-khaki.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
+    origin: "https://ecommerce-dashboard-frontend-khaki.vercel.app"
   }
 ));
 
