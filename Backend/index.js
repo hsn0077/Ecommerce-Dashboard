@@ -7,7 +7,13 @@ const Admin = require('./db/admin');
 const app = express();
 const cors = require("cors");
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://ecommerce-dashboard-frontend-khaki.vercel.app/"],
+    methods: ['POST', 'GET', 'DELETE'],
+    credentials: true
+  }
+));
 
 app.post("/register", async (req,resp)=>{
   let user = new User(req.body);
