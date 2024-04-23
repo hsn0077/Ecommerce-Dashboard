@@ -36,7 +36,7 @@ const Login =() =>{
         
     const handleLogin = async() =>{
         console.warn("email,password", email, password);
-        let result = await fetch('http://localhost:5000/login',{
+        let result = await fetch('https://ecommerce-dashboard-rho-mauve.vercel.app/login',{
             method: 'post',
             body:JSON.stringify({email,password}),
             headers: {
@@ -52,7 +52,7 @@ const Login =() =>{
             // alert("Please enter correct details")
         
         //admin
-        let result1 = await fetch('http://localhost:5000/admin',{
+        let result1 = await fetch('https://ecommerce-dashboard-rho-mauve.vercel.app/admin',{
             method: 'post',
             body:JSON.stringify({email,password}),
             headers: {
