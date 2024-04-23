@@ -9,7 +9,9 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors(
   {
-    origin: "https://ecommerce-dashboard-frontend-khaki.vercel.app"
+    origin: ["https://ecommerce-dashboard-frontend-khaki.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
   }
 ));
 
@@ -67,13 +69,3 @@ app.delete("/products/:id", async (req,resp)=> {
   resp.send(result);
 });
 
-
-// const connectDB = async () => {
-//   mongoose.connect('mongodb://127.0.0.1:27017/Hassan');
-//   const productSchema = new mongoose.Schema({});
-//   const product = mongoose.model('datas',productSchema);
-//   const data= await product.find();
-//   console.warn(data);
-// }
-// connectDB();
-app.listen(5000);
