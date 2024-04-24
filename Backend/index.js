@@ -6,13 +6,12 @@ const Product = require('./db/Product');
 const Admin = require('./db/admin');
 const app = express();
 const cors = require("cors");
+var corsOpt= {
+  origin: "https://ecommerce-dashboard-frontend-khaki.vercel.app"
+};
 app.use(express.json());
 app.use(cors(
-  {
-    origin: ["https://ecommerce-dashboard-frontend-khaki.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
+  corsOpt
 ));
 
 app.post("/register", async (req,resp)=>{
